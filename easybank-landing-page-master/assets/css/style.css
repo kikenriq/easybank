@@ -61,12 +61,24 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 30px;
-    margin: 20px 15px 20px 15px;
+    margin: 10px 15px 10px 15px;
+}
+
+.logo{
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav__menu{
     display: none;
 }
+
+.nav__btn{
+  display: inline-flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
 /*=============== HOME ===============*/
 .hero__bg{
     position: absolute;
