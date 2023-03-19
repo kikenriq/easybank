@@ -22,6 +22,7 @@
   
 html{
     scroll-behavior: smooth;
+    font-family: var(--body-font);
   }
   
 body,
@@ -30,6 +31,12 @@ input,
 textarea{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+  }
+
+  button{
+    cursor: pointer;
+    border: none;
+    outline: none;
   }
 
 ul{
@@ -44,6 +51,9 @@ img{
     width: 100%;
     height: auto;
   }
+section{
+  height: 100vh;
+}
 
 
 /*=============== HEADER ===============*/
@@ -62,6 +72,7 @@ nav{
     align-items: center;
     height: 30px;
     margin: 10px 15px 10px 15px;
+    z-index: 3;
 }
 
 .logo{
@@ -70,12 +81,15 @@ nav{
 }
 
 .nav__menu{
-    display: none;
+  position: relative;
+  display: none;
+  background-color: var(--White);
+  top: 5rem;
 }
 
 .nav__btn{
   display: inline-flex;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -83,16 +97,17 @@ nav{
 .hero__bg{
     position: absolute;
     width: 100%;
-    margin-top: 10px;
+    top: 30px;
 }
 .hero__img{
     position: relative;
-    top: 0;
+    top: -60px;
 }
 
 .hero__text{
     position: relative;
     text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -106,5 +121,65 @@ nav{
 .hero__text p{
     color: var(--Grayish-Blue);
 }
-/*=============== HEADER ===============*/
+
+.hero__btn{
+  width: 12rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 1rem ;
+  color: var(--White);
+  background: linear-gradient(90deg, rgba(50,250,48,1) 0%, rgba(92,227,255,1) 61%);
+}
+/*=============== ABOUT ===============*/
+.about{
+  background-color:var(--Very-LightGray);
+  padding: 3rem ;
+}
+
+.about__content{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.about__container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about__img{
+  width: 20%;
+}
+
+.about__title{
+  text-align: center;
+}
+
+.about__title h1{
+  font-weight: 300;
+  font-size: 35px;
+  color: var(--Dark-Blue);
+}
+
+.about__title p{
+  color: var(--Grayish-Blue);
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 1rem;
+}
+
+.about__text h1{
+  color: var(--Dark-Blue);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.about__text p{
+  color: var(--Grayish-Blue);
+}
+
 /*=============== HEADER ===============*/
