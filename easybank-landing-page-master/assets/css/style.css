@@ -52,7 +52,8 @@ img{
     height: auto;
   }
 section{
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 3rem;
 }
 
 
@@ -160,7 +161,7 @@ nav{
 /*=============== ABOUT ===============*/
 .about{
   background-color:var(--Very-LightGray);
-  padding: 3rem ;
+  padding: 3rem;
 }
 
 .about__content{
@@ -208,4 +209,65 @@ nav{
   color: var(--Grayish-Blue);
 }
 
-/*=============== HEADER ===============*/
+/*=============== BLOG ===============*/
+.blog{
+  padding: 2rem;
+}
+
+.blog__container{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.figure{
+  object-fit: cover;
+}
+
+.blog__articule{
+  border-radius: 2rem;
+}
+
+.blog-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  font-family: var(--body-font);
+}
+
+.blog-text h5,p {
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+}
+
+.blog-text h1{
+  color: var(--Dark-Blue);
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/*=============== FOOTER ===============*/
+footer{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--Dark-Blue);
+  padding: 4rem;
+}
+
+.logo__footer{
+  width: 40%;
+}
+
+.footer__icon{
+  display: flex;
+  gap: 1rem;
+  width: 5%;
+}
+
+.footer__text a {
+  color: var(--Light-GrayishBlue);
+  font-weight: 300;
+}
