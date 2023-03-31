@@ -132,6 +132,10 @@ nav{
     top: -60px;
 }
 
+.hero__bg2{
+  display: none;
+}
+
 .hero__text{
     position: relative;
     text-align: center;
@@ -295,10 +299,13 @@ footer{
 
 /*=============== BREAKPOINTS ===============*/
 @media screen and (min-width: 992px) {
+
+
+  /*=============== HEADER ===============*/
   header{
     height: 4rem;
   }
-
+/*=============== NAV ===============*/
   .nav__menu{
     display: flex;
     width: auto;
@@ -326,4 +333,48 @@ footer{
   nav{
     display: flex;
   }
+
+  /*=============== HOME ===============*/
+section{
+  height: 100vh;
+  padding: 0 8rem 0 8rem;
+  width: 100%;
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 10rem;
+}
+
+.hero-content{
+  order: 2;
+}
+
+.hero__bg{
+  display: none;
+}
+
+.hero__bg2{
+  display: block;
+  position: absolute;
+  width: 60%;
+  top: -10rem;
+}
+
+.hero__img{
+  position: relative;
+  right: -10rem;
+}
+
+.hero__text{
+  text-align: left;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
+
+  /*=============== ABOUT ===============*/
 }
